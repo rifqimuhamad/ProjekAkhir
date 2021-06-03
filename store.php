@@ -94,7 +94,7 @@
                                     <li><a href='".base_urls."?module=pesanan&action=list' style='text-decoration:none'>PesananKu</a></li>
                                     <li><a href='".base_url."logout.php' style='text-decoration:none'>Logout</a></li>
                                     <li>
-                                        <a href='".base_url."?page=keranjang' id='button-keranjang'>
+                                        <a href='".base_urls."?page=keranjang' id='button-keranjang'>
                                             <img src='".base_url."/assets/img/icon/cart.png' />";
                                                 if($totalBarang != 0){
                                                     echo "<span class='total-barang'>$totalBarang</span>";
@@ -123,7 +123,7 @@
                                     <li><a href='".base_url."?page=mainstore' style='text-decoration:none'>Blog</a></li>
                                     <li><a href='".base_url."?page=store' style='text-decoration:none'>Kontak</a></li>
                                     <li>
-                                        <a href='".base_urls."store.php?page=keranjang' id='button-keranjang'>
+                                        <a href='".base_urls."?page=keranjang' id='button-keranjang'>
                                             <img src='".base_url."/assets/img/icon/cart.png' />";
                                                 if($totalBarang != 0){
                                                     echo "<span class='total-barang'>$totalBarang</span>";

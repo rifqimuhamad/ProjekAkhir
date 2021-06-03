@@ -1,7 +1,7 @@
 <?php
 
-	define("base_url", "http://localhost/Project%20Web/");
-	define("base_urls", "http://localhost/Project%20Web/store.php");
+	define("base_url", "https://projekweb.herokuapp.com/");
+	define("base_urls", "https://projekweb.herokuapp.com/store.php");
 
 	$arrayStatusPesanan[0] = "Menunggu Pembayaran";
 	$arrayStatusPesanan[1] = "Pembayaran Sedang Di Validasi";

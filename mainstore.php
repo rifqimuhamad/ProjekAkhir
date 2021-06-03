@@ -46,7 +46,7 @@
 										<span>Stok : $row[stok]</span>
 									</div>
 									<div class='button-add-cart'>
-										<a href='".base_url."tambah_keranjang.php?barang_id=$row[barang_id]'>+ add to cart</a>
+										<a href='".base_urls."tambah_keranjang.php?barang_id=$row[barang_id]'>+ add to cart</a>
 									</div>";
 							
 							$no++;

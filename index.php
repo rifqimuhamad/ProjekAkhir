@@ -61,7 +61,7 @@
                 $file = "module/$module/$action.php";
                  echo "<nav>
                         <div class='wrapper'>
-                            <div class='logo'><a href='' style='text-decoration:none'>Edu Covid19 | Store</a></div>
+                            <div class='logo'><a href='' style='text-decoration:none'>Edu Covid19 | Panel</a></div>
                             <div class='menu'>
                                 <ul>
                                     <li><a href='".base_urls."?page=main' style='text-decoration:none'>Home</a></li>
@@ -85,16 +85,21 @@
                 $file = "module/$module/$action.php";
                  echo "<nav>
                         <div class='wrapper'>
-                            <div class='logo'><a href='' style='text-decoration:none'>Edu Covid19 | Store<</a></div>
+                            <div class='logo'><a href='' style='text-decoration:none'>Edu Covid19 | Store</a></div>
                             <div class='menu'>
                                 <ul>
                                     <li><a href='".base_url."?page=main' style='text-decoration:none'>Home</a></li>
                                     <li><a href='".base_urls."?page=mainstore' style='text-decoration:none'>Store</a></li>
                                     <li><a href='".base_urls."?module=pesanan&action=list' style='text-decoration:none'>PesananKu</a></li>
                                     <li><a href='".base_url."logout.php' style='text-decoration:none'>Logout</a></li>
-                                    ";
-                                               
-                echo "                  
+                                    <li>
+                                        <a href='".base_url."?page=keranjang' id='button-keranjang'>
+                                            <img src='".base_url."/assets/img/icon/cart.png' />";
+                                                if($totalBarang != 0){
+                                                    echo "<span class='total-barang'>$totalBarang</span>";
+                                                }
+                echo "                  </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -108,7 +113,7 @@
             }else{
                                 echo "<nav>
                         <div class='wrapper'>
-                            <div class='logo'><a href='' style='text-decoration:none'>Store EduCovid19</a></div>
+                            <div class='logo'><a href='' style='text-decoration:none'> Edu-Covid19</a></div>
                             <div class='menu'>
                                 <ul>
                                     <li><a href='".base_url."?page=main' style='text-decoration:none'>Home</a></li>
@@ -143,6 +148,7 @@
             </div>
         </div>
     </div> -->
+    <div class="row-padding"></div>
     <div id="copyright">
 
         <div class="wrapper">

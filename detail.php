@@ -20,7 +20,7 @@
 				echo "<div id='detail-barang'>
 							<h2>$row[nama_barang]</h2>
 							<div id='frame-gambar'>
-								<img src='".base_url."img/barang/$row[gambar]' />
+								<img src='".base_url."assets/img/items/$row[gambar]' />
 							</div>
 							<div id='frame-harga'>
 								<span>".rupiah($row['harga'])."</span>

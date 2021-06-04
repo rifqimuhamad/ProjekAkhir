@@ -32,7 +32,7 @@
 
 	?>
 
-	<script src="<?php echo base_urls."assets/js/ckeditor/ckeditor.js"; ?>"></script>
+	<script src="<?php echo base_url."assets/js/ckeditor/ckeditor.js"; ?>"></script>
 
 	<form action="<?php echo base_url."module/barang/action.php?barang_id=$barang_id"; ?>" method="POST" enctype="multipart/form-data">
 

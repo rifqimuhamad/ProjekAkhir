@@ -8,7 +8,7 @@
 		$status = $row['status'];
 		
 	?>
-	<form action="<?php echo base_urls."module/pesanan/action.php?pesanan_id=$pesanan_id"; ?>" method="POST">
+	<form action="<?php echo base_url."module/pesanan/action.php?pesanan_id=$pesanan_id"; ?>" method="POST">
 		 
 		<div class="element-form">
 			<label>Pesanan Id (Faktur Id)</label>    

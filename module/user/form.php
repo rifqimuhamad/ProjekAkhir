@@ -15,7 +15,7 @@
 		$status = $row["status"];
 		$level = $row["level"];
 	?>
-	<form action="<?php echo BASE_URL."module/user/action.php?user_id=$user_id"?>" method="POST">
+	<form action="<?php echo base_url."module/user/action.php?user_id=$user_id"?>" method="POST">
 		  
 		<div class="element-form">
 			<label>Nama Lengkap</label>	

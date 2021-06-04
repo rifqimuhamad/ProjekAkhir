@@ -18,7 +18,7 @@
 		}
 
 	?>
-	<form action="<?php echo base_urls."module/kategori/action.php?kategori_id=$kategori_id"; ?>" method="POST">
+	<form action="<?php echo base_url."module/kategori/action.php?kategori_id=$kategori_id"; ?>" method="POST">
 
 		<div class="element-form">
 			<label>Kategori</label>

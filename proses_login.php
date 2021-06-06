@@ -19,11 +19,16 @@
 		$_SESSION['user_id'] = $row['user_id'];
 		$_SESSION['nama'] = $row['nama'];
 		$_SESSION['level'] = $row['level'];
+		$level = $_SESSION['level'];
 		
 		if(isset($_SESSION["proses_pesanan"])){
 			unset($_SESSION["proses_pesanan"]);
 			header("location: ".base_urls."?page=data_pemesan");
+		}elseif ($level == "Penulis") {
+			header("location: ".base_url."?module=artikel_blog&action=list");
 		}else{
-			header("location: ".base_urls."?module=pesanan&action=list");
+			// code...
+			header("location: ".base_url."?page=main");
 		}
+		
 	}

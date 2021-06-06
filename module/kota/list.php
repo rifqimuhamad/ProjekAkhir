@@ -1,7 +1,7 @@
 <div class="wrapper row-padding">
 
 	<div id="frame-tambah">
-		<a class="tombol-action" href="<?php echo base_url."index.php?page=my_profile&module=kota&action=form"; ?>">+ Tambah Kota</a>
+		<a class="tombol-action" href="<?php echo base_urls."?module=kota&action=form"; ?>">+ Tambah Kota</a>
 	</div>
 
 	<?php

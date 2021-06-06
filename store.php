@@ -52,7 +52,20 @@
               $mode = isset($_GET['mode']) ? $_GET['mode'] : false;
               if ($level == "Penulis") {
                 $file = "module/$module/$action.php";
-               echo "";
+               echo "<nav>
+                        <div class='wrapper'>
+                            <div class='logo'><a href='' style='text-decoration:none'>Edu Covid19 | Panel</a></div>
+                            <div class='menu'>
+                                <ul>
+                                    <li><a href='".base_url."?page=main' style='text-decoration:none'>Home</a></li>
+                                    <li><a href='".base_url."?module=kategorib&action=list' style='text-decoration:none'>Kategori</a></li>
+                                    <li><a href='".base_url."?module=artikel_blog&action=list' style='text-decoration:none'>Artikel</a></li>
+                                    <li><a href='".base_url."logout.php' style='text-decoration:none'>Logout</a></li>
+                                    ";
+                echo "          </ul>
+                            </div>
+                        </div>
+                      </nav>";
                   if(file_exists($file)){
                     include_once($file);
                   }else{
@@ -120,7 +133,7 @@
                                     <li><a href='".base_url."?page=main' style='text-decoration:none'>Home</a></li>
                                     <li><a href='".base_url."?page=store' style='text-decoration:none'>About Me</a></li>
                                     <li><a href='".base_url."store.php' style='text-decoration:none'>Store</a></li>
-                                    <li><a href='".base_url."?page=mainstore' style='text-decoration:none'>Blog</a></li>
+                                    <li><a href='".base_url."?page=blog' style='text-decoration:none'>Blog</a></li>
                                     <li><a href='".base_url."?page=store' style='text-decoration:none'>Kontak</a></li>
                                     <li>
                                         <a href='".base_urls."store.php?page=keranjang' id='button-keranjang'>

@@ -181,7 +181,7 @@
 
         <div class="wrapper">
             <div class="text-center">
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/channel/UCr9ueGVQRoURF9uGsDdBwZQ" target="_blank" role="button"><i class="fab fa-youtube"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="https://youtu.be/gX-ieWNx3qs" target="_blank" role="button"><i class="fab fa-youtube"></i></a>
                 <a class="btn btn-outline-light btn-floating m-1" href= "https://trello.com/b/esiVG2Qw/dpw-proyek-akhir" target="_blank" role="button"><i class="fab fa-trello"></i></a>
                 <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/rifqimuhamad/ProjekAkhir" target="_blank" role="button"><i class="fab fa-github"></i></a>
             </div>

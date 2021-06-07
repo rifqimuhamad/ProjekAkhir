@@ -99,7 +99,7 @@ submitBtn.addEventListener('click', () => {
         } else {
             let nilai = (score);
             quiz.innerHTML = `
-                <h2>Kamu mendapatkan nilai ${nilai}}</h2>
+                <h2>Kamu mendapatkan nilai ${nilai}</h2>
 
                 <button onclick="location.reload()" style="
                             background: #1e5474;

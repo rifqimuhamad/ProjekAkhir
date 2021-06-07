@@ -27,7 +27,7 @@
 			$button = "Update";
 			
 			$keterangan_gambar = "(Klik pilih gambar jika ingin mengganti gambar disamping)";
-			$gambar = "<img src='".base_urls."assets/img/items/$gambar' style='width: 200px;vertical-align: middle;' />";
+			$gambar = "<img src='".base_url."assets/img/items/$gambar' style='width: 200px;vertical-align: middle;' />";
 		}
 
 	?>

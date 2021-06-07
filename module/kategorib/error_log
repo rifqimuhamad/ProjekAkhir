@@ -1,0 +1,2 @@
+[06-Jun-2021 10:27:44 UTC] PHP Warning:  Use of undefined constant base_urls - assumed 'base_urls' (this will throw an Error in a future version of PHP) in /home/storyfq1/public_html/ProjekAkhir-main/module/kategorib/action.php on line 19
+[06-Jun-2021 10:27:51 UTC] PHP Warning:  Use of undefined constant base_urls - assumed 'base_urls' (this will throw an Error in a future version of PHP) in /home/storyfq1/public_html/ProjekAkhir-main/module/kategorib/action.php on line 19

@@ -14,7 +14,7 @@
                 ">What Is</p>
                 <h2>CORONAVIRUS</h2>
                 <p style="padding-top: 0px;margin-top: 0px;padding-bottom: 0px;">and how to protect yourself?</p>
-                <p><a href="" class="tbl-pink">More</a></p>
+                <p><a href="?page=blog" class="tbl-pink">More</a></p>
             </div>
         </section>        
     </div>
@@ -25,7 +25,7 @@
         <section id="tutors">
             <div class="tengah">
                 <div class="kolom">
-                    <h2>Apa itu 3M?</h2>
+                    <h2 class="animatedBox">Apa itu 3M?</h2>
                     <p>Perilaku disiplin 3M termasuk dalam kampanye #ingatpesanibu untuk menekan penyebaran virus Covid-19. Penerapan 3M untuk pencegahan Covid-19 dapat dilakukan dengan:</p>
                 </div>
 

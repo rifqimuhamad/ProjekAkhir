@@ -38,9 +38,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="assets/js/chartjs/Chart.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/store.css">
     <link rel="stylesheet" href="assets/css/banner.css">
+
     <script src="assets/js/Slides-SlidesJS-3/source/jquery.slides.min.js"; ?>"></script>
 </head>
 <body>
@@ -77,11 +79,30 @@
                             <div class='logo'><a href='' style='text-decoration:none'>Edu Covid19 | Panel</a></div>
                             <div class='menu'>
                                 <ul>
-                                    <li><a href='".base_urls."?page=main' style='text-decoration:none'>Home</a></li>
-                                    <li><a href='".base_urls."?module=kategori&action=list' style='text-decoration:none'>Kategori</a></li>
-                                    <li><a href='".base_urls."?module=barang&action=list' style='text-decoration:none'>Barang</a></li>
-                                    <li><a href='".base_urls."?module=kota&action=list' style='text-decoration:none'>Kota</a></li>
-                                    <li><a href='".base_urls."?module=user&action=list' style='text-decoration:none'>User</a></li>
+                                    <li><a href='".base_url."?page=main' style='text-decoration:none'>Home</a></li>
+                                    <li><a href='".base_url."?module=kategori&action=list' style='text-decoration:none'>Kategori</a></li>
+                                    <li><a href='".base_url."?module=barang&action=list' style='text-decoration:none'>Barang</a></li>
+                                    <li><a href='".base_url."logout.php' style='text-decoration:none'>Logout</a></li>
+                                    ";
+                echo "          </ul>
+                            </div>
+                        </div>
+                      </nav>";
+                  if(file_exists($file)){
+                    include_once($file);
+                  }else{
+                    echo "tidak ada data";
+                  }
+              }elseif ($level == "Admin"){
+                $file = "module/$module/$action.php";
+                 echo "<nav>
+                        <div class='wrapper'>
+                            <div class='logo'><a href='' style='text-decoration:none'>Edu Covid19 | Panel</a></div>
+                            <div class='menu'>
+                                <ul>
+                                    <li><a href='".base_url."?page=main' style='text-decoration:none'>Home</a></li>
+                                    <li><a href='".base_url."?module=manajemen&action=list' style='text-decoration:none'>Manajemen Covid Provinsi</a></li>
+                                    <li><a href='".base_url."?module=user&action=list' style='text-decoration:none'>User</a></li>
                                     <li><a href='".base_url."logout.php' style='text-decoration:none'>Logout</a></li>
                                     ";
                 echo "          </ul>
@@ -102,17 +123,12 @@
                             <div class='menu'>
                                 <ul>
                                     <li><a href='".base_url."?page=main' style='text-decoration:none'>Home</a></li>
-                                    <li><a href='".base_urls."?page=mainstore' style='text-decoration:none'>Store</a></li>
-                                    <li><a href='".base_urls."?module=pesanan&action=list' style='text-decoration:none'>PesananKu</a></li>
+                                    <li><a href='".base_url."?module=statis&action=list' style='text-decoration:none'>Grafik Covid</a></li>
+                                    <li><a href='".base_url."?page=mainstore' style='text-decoration:none'>Store</a></li>
+                                    <li><a href='".base_url."?module=quis&action=quis style='text-decoration:none'>Quis</a></li>
                                     <li><a href='".base_url."logout.php' style='text-decoration:none'>Logout</a></li>
-                                    <li>
-                                        <a href='".base_url."?page=keranjang' id='button-keranjang'>
-                                            <img src='".base_url."/assets/img/icon/cart.png' />";
-                                                if($totalBarang != 0){
-                                                    echo "<span class='total-barang'>$totalBarang</span>";
-                                                }
-                echo "                  </a>
-                                    </li>
+                                    ";
+                echo "           
                                 </ul>
                             </div>
                         </div>
@@ -130,10 +146,9 @@
                             <div class='menu'>
                                 <ul>
                                     <li><a href='".base_url."?page=main' style='text-decoration:none'>Home</a></li>
-                                    <li><a href='".base_url."?page=store' style='text-decoration:none'>About Me</a></li>
-                                    <li><a href='".base_url."store.php' style='text-decoration:none'>Store</a></li>
-                                    <li><a href='".base_url."?page=mainstore' style='text-decoration:none'>Blog</a></li>
-                                    <li><a href='".base_url."?page=store' style='text-decoration:none'>Kontak</a></li>
+                                    <li><a href='".base_url."?page=mainstore' style='text-decoration:none'>Store</a></li>
+                                    <li><a href='".base_url."?page=blog' style='text-decoration:none'>Blog</a></li>
+                                    <li><a href='".base_url."?page=kontak' style='text-decoration:none'>Kontak</a></li>
                                     <li><a href='".base_url."?page=register' style='text-decoration:none'>Register</a></li>";
                 echo "                 
                                     <li><a href='".base_url."?page=login' class='tbl-biru' style='text-decoration:none'>Sign In</a></li>
@@ -173,6 +188,7 @@
             &copy; 2021. <b>Edu Covid19.</b> All Rights Reserved.
         </div>
     </div>
+    <script src="assets/js/quis.js"></script>
     
 </body>
 

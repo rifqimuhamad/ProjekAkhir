@@ -1,7 +1,7 @@
 <div class="wrapper row-padding">
 
 	<div id="frame-tambah">
-		<a href="<?php echo base_urls."?module=kategori&action=form"; ?>" class="tombol-action">+ Tambah Kategori</a>
+		<a href="<?php echo base_url."?module=kategori&action=form"; ?>" class="tombol-action">+ Tambah Kategori</a>
 	</div>
 
 	<?php
@@ -29,7 +29,7 @@
 						<td class='kiri'>$row[kategori]</td>
 						<td class='tengah'>$row[status]</td>
 						<td class='tengah'>
-							<a class='tombol-action' href='".base_urls."?module=kategori&action=form&kategori_id=$row[kategori_id]'>Edit</a>
+							<a class='tombol-action' href='".base_url."?module=kategori&action=form&kategori_id=$row[kategori_id]'>Edit</a>
 						</td>
 					  </tr>";
 					  

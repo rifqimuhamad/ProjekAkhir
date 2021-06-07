@@ -30,5 +30,5 @@
 		mysqli_query($koneksi, "INSERT INTO user (level, nama, email, alamat, phone, password, status)
 										VALUES ('$level', '$nama_lengkap', '$email', '$alamat', '$phone', '$password', '$status')");												
 
-		header("location: ".base_urls."?page=login");
+		header("location: ".base_url."?page=login");
 	}

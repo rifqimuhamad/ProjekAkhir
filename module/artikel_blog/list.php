@@ -27,7 +27,7 @@
 				echo "<tr>
 						<td class='kolom-nomor'>$no</td>
 						<td class='kiri'>$row[nama_artikel]</td>
-						<td class='kiri'>$row[kategori_blog_id]</td>
+						<td class='kiri'>$row[kategori_blog]</td>
 						<td class='tengah'>$row[status]</td>
 						<td class='tengah'>
 							<a class='tombol-action' href='".base_url."?module=artikel_blog&action=form&artikel_id=$row[artikel_id]'>Edit</a>

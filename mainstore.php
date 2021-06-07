@@ -38,15 +38,17 @@
 							
 							echo "<li $style>
 									<p class='price'>".rupiah($row['harga'])."</p>
-									<a href='".base_urls."?page=detail&barang_id=$row[barang_id]'>
-										<img src='".base_url."/assets/img/items/$row[gambar]' />
+									<a href='".base_url."?page=detail&barang_id=$row[barang_id]'>
+										<img style=' height: 168px;
+                                                width: 240px;
+                                            ' src='".base_url."/assets/img/items/$row[gambar]' />
 									</a>
 									<div class='keterangan-gambar'>
-										<p><a href='".base_urls."?page=detail&barang_id=$row[barang_id]'>$row[nama_barang]</a></p>
+										<p><a href='".base_url."?page=detail&barang_id=$row[barang_id]'>$row[nama_barang]</a></p>
 										<span>Stok : $row[stok]</span>
 									</div>
 									<div class='button-add-cart'>
-										<a href='".base_urls."tambah_keranjang.php?barang_id=$row[barang_id]'>+ add to cart</a>
+										<a href='https://web.whatsapp.com/'>+ Beli Via Whatsapp</a>
 									</div>";
 							
 							$no++;

@@ -37,14 +37,17 @@
 							}
 							
 							echo "<li $style>
-									<a href='".base_urls."?page=artikel&artikel_id=$row[artikel_id]'>
-										<img src='".base_url."/assets/img/artikel/$row[gambar]' />
+									<a href='".base_url."?page=artikel&artikel_id=$row[artikel_id]'>
+										<img style='
+                                                height: 168px;
+                                                width: 240px;
+                                            ' src='".base_url."/assets/img/artikel/$row[gambar]' />
 									</a>
 									<div class='keterangan-gambar'>
-										<p><a href='".base_urls."?page=artikel&artikel_id=$row[artikel_id]'>$row[nama_artikel]</a></p>
+										<p><a href='".base_url."?page=artikel&artikel_id=$row[artikel_id]'>$row[nama_artikel]</a></p>
 									</div>
 									<div class='button-add-cart'>
-										<a href='".base_urls."?page=artikel&artikel_id=$row[artikel_id]'>Baca Lebih Lanjut</a>
+										<a href='".base_url."?page=artikel&artikel_id=$row[artikel_id]'>Baca Lebih Lanjut</a>
 									</div>";
 
 							

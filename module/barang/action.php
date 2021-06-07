@@ -35,4 +35,4 @@
 												  $update_gambar WHERE barang_id='$barang_id'");
 	}
 	
-	header("location:".base_urls."?module=barang&action=list");
+	header("location:".base_url."?module=barang&action=list");

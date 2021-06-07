@@ -20,7 +20,9 @@
 				echo "<div id='detail-barang'>
 							<h2>$row[nama_artikel]</h2>
 							<div id='frame-gambar'>
-								<img src='".base_url."assets/img/artikel/$row[gambar]' />
+								<img style=' height: 168px;
+                                                width: 240px;
+                                            ' src='".base_url."assets/img/artikel/$row[gambar]' />
 							</div>
 							<div id='keterangan'>
 								<b>Artikel : </b> $row[artikel_blog]

@@ -1,0 +1,5 @@
+[06-Jun-2021 16:47:32 UTC] PHP Notice:  Undefined index: provinces_id in /home/storyfq1/public_html/ProjekAkhir-main/module/manajemen/action.php on line 16
+[06-Jun-2021 16:49:12 UTC] PHP Notice:  Undefined index: provinces_id in /home/storyfq1/public_html/ProjekAkhir-main/module/manajemen/action.php on line 16
+[06-Jun-2021 16:53:05 UTC] PHP Notice:  Undefined variable: meninggal in /home/storyfq1/public_html/ProjekAkhir-main/module/manajemen/action.php on line 20
+[06-Jun-2021 16:53:19 UTC] PHP Notice:  Undefined variable: meninggal in /home/storyfq1/public_html/ProjekAkhir-main/module/manajemen/action.php on line 20
+[06-Jun-2021 16:53:32 UTC] PHP Notice:  Undefined variable: meninggal in /home/storyfq1/public_html/ProjekAkhir-main/module/manajemen/action.php on line 20

@@ -24,7 +24,7 @@
 	else if($button == "Update"){
 		$artikel_id = $_GET['artikel_id'];
 		
-		mysqli_query($koneksi, "UPDATE artikel SET kategori_blog_id='$kategori_blog_id',
+		mysqli_query($koneksi, "UPDATE artikel SET artikel_id='$artikel_id',
 												  nama_artikel='$nama_artikel',
 												  artikel_blog='$artikel',
 												  status='$status'
